@@ -12,19 +12,24 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
+import calculator.Calculator;
+
+@SuppressWarnings("serial")
 public class appPanel extends JPanel implements Runnable,KeyListener,MouseListener
 {
 	private final int WIDTH = 600;
 	private final int HEIGHT = 800;
 	
 	private final int FPS = 30;
-	private final int targetTime = 1000/30;
+	private final int targetTime = 1000/FPS;
 	
 	private Thread thread;
 	
-	private boolean isRunning = false;
+	private boolean isRunning;
 	private BufferedImage image;
 	private Graphics2D g;
+	
+	public Calculator calc;
 	
 	public appPanel()
 	{	
@@ -41,6 +46,7 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 			addKeyListener(this);
 			addMouseListener(this);
 			thread = new Thread(this);
+			thread.start();
 			
 		}
 	}
@@ -50,14 +56,17 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 		isRunning = true;
 		image = new BufferedImage(WIDTH,HEIGHT,1);
 		g = (Graphics2D) image.getGraphics();
+		calc = new Calculator();
 	}
 	public void update()
 	{
-		
+		calc.update();
 	}
 	public void draw()
 	{
 		
+		calc.draw(g);
+	
 	}
 	public void render()
 	{
@@ -78,6 +87,7 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 		if(isRunning)
 		{
 			start = System.nanoTime();
+			
 			update();
 			draw();
 			render();
