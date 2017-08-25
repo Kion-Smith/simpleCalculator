@@ -58,17 +58,15 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 		g = (Graphics2D) image.getGraphics();
 		calc = new Calculator();
 	}
-	public void update()
+	private void update()
 	{
 		calc.update();
 	}
-	public void draw()
+	private void draw()
 	{
-		
 		calc.draw(g);
-	
 	}
-	public void render()
+	private void render()
 	{
 		Graphics g2 = getGraphics();
 		g2.drawImage(image,0,0,WIDTH,HEIGHT,null);
@@ -84,7 +82,7 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 		long wait;
 		long elapsed;
 		
-		if(isRunning)
+		while(isRunning)
 		{
 			start = System.nanoTime();
 			

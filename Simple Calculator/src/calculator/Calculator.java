@@ -32,10 +32,8 @@ public class Calculator
 	{
 		g.setColor(Color.RED);
 		g.fillRect(0, 0, 600, 800);
-		System.out.println("RAN");
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("Arial",Font.PLAIN,48));
-		g.drawString("SNAKE", 320, 100);
 		
 		
 		//g.fillRect(0, 0, 800, 600);
