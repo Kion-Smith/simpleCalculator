@@ -32,6 +32,7 @@ public class Calculator
 	{
 		Color darkOrange = new Color(229, 122, 34);// Orange
 		Color lightOrange = new Color(255, 156, 76);// Orange
+		Color darkestOrange = new Color(221, 148, 2);
 		Color white = new Color(255, 229, 209);
 		g.setColor(darkOrange);
 		g.fillRect(0, 0, 600, 800);
@@ -43,16 +44,30 @@ public class Calculator
 		g.fillRect(10, 220, 100, 100);
 		g.fillRect(10, 330, 100, 100);
 		g.fillRect(10, 440, 100, 100);
+		g.fillRect(10, 550, 100, 100);
 		
 		g.fillRect(120, 220, 100, 100);
 		g.fillRect(120, 330, 100, 100);
 		g.fillRect(120, 440, 100, 100);
+		g.fillRect(120, 550, 100, 100);
 		
 		g.fillRect(230, 220, 100, 100);
 		g.fillRect(230, 330, 100, 100);
 		g.fillRect(230, 440, 100, 100);
+		g.fillRect(230, 550, 100, 100);
 		
-		g.fillRect(120, 550, 100, 100);
+		g.setColor(darkestOrange);
+		g.fillRect(380, 220, 100, 100);
+		g.fillRect(380, 330, 100, 100);
+		g.fillRect(380, 440, 100, 100);
+		g.fillRect(380, 550, 100, 100);
+		
+		g.fillRect(490, 220, 100, 100);
+		g.fillRect(490, 330, 100, 100);
+		g.fillRect(490, 440, 100, 100);
+		g.fillRect(490, 550, 100, 100);
+		
+		
 		
 		g.setColor(white);
 		g.setFont(new Font("Arial",Font.PLAIN,48));
@@ -60,16 +75,22 @@ public class Calculator
 		g.drawString("1",47,285);
 		g.drawString("4",47,395);
 		g.drawString("7",47,505);
+		g.drawString("+/-",30,620);
 		
 		g.drawString("2",157,285);
 		g.drawString("5",157,395);
 		g.drawString("8",157,505);
+		g.drawString("0",157,620);
 		
 		g.drawString("3",267,285);
 		g.drawString("6",267,395);
 		g.drawString("9",267,505);
+		g.drawString(".",275,610);
 		
-		g.drawString("0",157,620);
+	
+		
+		
+		
 		
 		g.setColor(Color.BLACK);
 		
