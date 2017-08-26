@@ -17,8 +17,8 @@ import calculator.Calculator;
 @SuppressWarnings("serial")
 public class appPanel extends JPanel implements Runnable,KeyListener,MouseListener
 {
-	private final int WIDTH = 600;
-	private final int HEIGHT = 800;
+	private final int WIDTH = 400;
+	private final int HEIGHT = 600;
 	
 	private final int FPS = 30;
 	private final int targetTime = 1000/FPS;

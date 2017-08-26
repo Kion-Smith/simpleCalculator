@@ -35,42 +35,42 @@ public class Calculator
 		Color darkestOrange = new Color(221, 148, 2);
 		Color white = new Color(255, 229, 209);
 		g.setColor(darkOrange);
-		g.fillRect(0, 0, 600, 800);
+		g.fillRect(0, 0, 400, 600);
 		g.setColor(white);
-		g.fillRect(10, 10, 580, 200);
+		g.fillRect(10, 10, 380, 150);
 		
 		g.setColor(lightOrange);
-		
-		g.fillRect(10, 220, 100, 100);
-		g.fillRect(10, 330, 100, 100);
-		g.fillRect(10, 440, 100, 100);
-		g.fillRect(10, 550, 100, 100);
-		
-		g.fillRect(120, 220, 100, 100);
-		g.fillRect(120, 330, 100, 100);
-		g.fillRect(120, 440, 100, 100);
-		g.fillRect(120, 550, 100, 100);
-		
-		g.fillRect(230, 220, 100, 100);
-		g.fillRect(230, 330, 100, 100);
-		g.fillRect(230, 440, 100, 100);
-		g.fillRect(230, 550, 100, 100);
-		
-		g.setColor(darkestOrange);
-		g.fillRect(380, 220, 100, 100);
-		g.fillRect(380, 330, 100, 100);
-		g.fillRect(380, 440, 100, 100);
-		g.fillRect(380, 550, 100, 100);
-		
-		g.fillRect(490, 220, 100, 100);
-		g.fillRect(490, 330, 100, 100);
-		g.fillRect(490, 440, 100, 100);
-		g.fillRect(490, 550, 100, 100);
+		//Row 1
+		g.fillRect(20, 250, 50, 50);
+		g.fillRect(20, 330, 50, 50);
+		g.fillRect(20, 440, 50, 50);
+		g.fillRect(20, 550, 50, 50);
+		//Row 2
+		g.fillRect(140, 250, 50, 50);
+		g.fillRect(140, 330, 50, 50);
+		g.fillRect(140, 440, 50, 50);
+		g.fillRect(140, 550, 50, 50);
+		//Row 3
+		g.fillRect(250, 250, 50, 50);
+		g.fillRect(250, 330, 50, 50);
+		g.fillRect(250, 440, 50, 50);
+		g.fillRect(250, 550, 50, 50);
+		//Row 4
+		g.fillRect(360, 250, 50, 50);
+		g.fillRect(360, 330, 50, 50);
+		g.fillRect(360, 440, 50, 50);
+		g.fillRect(360, 550, 50, 50);
+		//Row 5
+		g.fillRect(470, 250, 50, 50);
+		g.fillRect(470, 330, 50, 50);
+		g.fillRect(470, 440, 50, 50);
+		g.fillRect(470, 550, 50, 50);
+		//Row 6
 		
 		
 		
 		g.setColor(white);
-		g.setFont(new Font("Arial",Font.PLAIN,48));
+		g.setFont(new Font("Arial",Font.PLAIN,24));
 		
 		g.drawString("1",47,285);
 		g.drawString("4",47,395);
