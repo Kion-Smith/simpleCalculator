@@ -6,7 +6,7 @@ import java.awt.Graphics2D;
 
 public class Calculator 
 {
-
+	private int tick=0;
 	public Calculator ()
 	{
 		
@@ -30,6 +30,7 @@ public class Calculator
 	
 	public void draw(Graphics2D g) 
 	{
+		tick++;
 		Color darkOrange = new Color(229, 122, 34);// Orange
 		Color lightOrange = new Color(255, 156, 76);// Orange
 		Color darkestOrange = new Color(221, 148, 2);
@@ -51,7 +52,7 @@ public class Calculator
 		g.fillRect(10, 160, 310, 90);
 		g.fillRect(295, 160, 95, 430);
 		
-		g.setColor(Color.black);
+		g.setColor(lightOrange);
 		//Row 1
 		
 		g.drawRect(10, 250, 95, 85);
@@ -93,7 +94,19 @@ public class Calculator
 
 		
 		g.setColor(Color.BLACK);
-		
+		if(tick <= 40)
+		{
+			g.fillRect(375, 20, 1, 130);// gonna need to chnage this to depend on location
+			//System.out.println(tick);
+		}
+		else if(tick>40)
+		{
+			
+			if(tick == 50)
+			{
+				tick =0;
+			}
+		}
 		
 		
 		//g.fillRect(0, 0, 800, 600);
