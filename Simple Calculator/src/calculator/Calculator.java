@@ -40,17 +40,17 @@ public class Calculator
 		g.fillRect(0, 0, 400, 600);
 		
 		g.setColor(white);
-		g.fillRect(10, 10, 380, 150);
+		g.fillRect(10, 5, 380, 140);//border
 		
 		g.setColor(Color.WHITE);
-		g.fillRect(20, 20, 360, 130);
+		g.fillRect(20, 10, 360, 130);
 		
 		g.setColor(lightOrange);
 		g.fillRect(10, 230, 285, 360);
 		
 		g.setColor(Orange);
-		g.fillRect(10, 160, 310, 90);
-		g.fillRect(295, 160, 95, 430);
+		g.fillRect(10, 150, 380, 90);//Top bar
+		g.fillRect(295, 160, 95, 430);//side ways bar
 		
 		g.setColor(lightOrange);
 		//Row 1
