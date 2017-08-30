@@ -52,6 +52,8 @@ public class Calculator
 		g.fillRect(10, 150, 380, 90);//Top bar
 		g.fillRect(295, 160, 95, 430);//side ways bar
 		
+	
+		
 		g.setColor(lightOrange);
 		//Row 1
 		
@@ -69,6 +71,25 @@ public class Calculator
 		g.drawRect(200, 335, 95, 85);
 		g.drawRect(200, 420, 95, 85);
 		g.drawRect(200, 505, 95, 85);
+		
+		g.setColor(Color.black);
+		//First row for special buttons
+		g.drawRect(10, 150, 95, 45);
+		g.drawRect(105, 150, 95, 45);
+		g.drawRect(200, 150, 95, 45);
+		//Second for special 
+		g.drawRect(10, 195, 95, 45);
+		g.drawRect(105, 195, 95, 45);
+		g.drawRect(200, 195, 95, 45);
+		
+		//Regular calc bbuttons
+		
+		g.drawRect(295, 150, 95, 90);
+		g.drawRect(295, 240, 95, 90);
+		g.drawRect(295, 330, 95, 90);
+		g.drawRect(295, 420, 95, 90);
+		g.drawRect(295, 510, 95, 80);
+		
 
 		
 		
@@ -85,18 +106,23 @@ public class Calculator
 		g.drawString("8",145,475);
 		g.drawString("0",145,565);
 		
+		
 		g.drawString("3",240,305);
 		g.drawString("6",240,390);
 		g.drawString("9",240,475);
 		g.setFont(new Font("Arial",Font.PLAIN,48));
+		g.drawString("=",330,565);
 		g.drawString(".",240,565);
-	
+		g.drawString("/",335,485);
+		g.drawString("x",330,390);
+		g.drawString("_",330,280);
+		g.drawString("+",332,210);
 
 		
 		g.setColor(Color.BLACK);
 		if(tick <= 40)
 		{
-			g.fillRect(375, 20, 1, 130);// gonna need to chnage this to depend on location
+			g.fillRect(375, 10, 1, 130);// gonna need to chnage this to depend on location
 			//System.out.println(tick);
 		}
 		else if(tick>40)
