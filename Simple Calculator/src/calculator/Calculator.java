@@ -72,7 +72,7 @@ public class Calculator
 		g.drawRect(200, 420, 95, 85);
 		g.drawRect(200, 505, 95, 85);
 		
-		g.setColor(Color.black);
+		g.setColor(white);
 		//First row for special buttons
 		g.drawRect(10, 150, 95, 45);
 		g.drawRect(105, 150, 95, 45);
@@ -117,7 +117,17 @@ public class Calculator
 		g.drawString("x",330,390);
 		g.drawString("_",330,280);
 		g.drawString("+",332,210);
-
+		
+		
+		g.setFont(new Font("Arial",Font.PLAIN,62));
+		g.drawString("\u2190",220,190);//arrow
+		g.setFont(new Font("Arial",Font.PLAIN,32));
+		g.drawString("save",120,185);
+		g.drawString("use",35,185);
+		g.drawString("\u221A",35,230);//sqrt
+		g.drawString("   ^",115,235);
+		g.drawString("%",235,230);//modulo
+		
 		
 		g.setColor(Color.BLACK);
 		if(tick <= 40)
