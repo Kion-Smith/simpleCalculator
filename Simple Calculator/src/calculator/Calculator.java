@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 
+import Controller.mouseHandler;
+
 public class Calculator 
 {
 	private int tick=0;
@@ -30,6 +32,7 @@ public class Calculator
 	
 	public void draw(Graphics2D g) 
 	{
+		
 		tick++;
 		Color darkOrange = new Color(229, 122, 34);// Orange
 		Color lightOrange = new Color(255, 156, 76);// Orange

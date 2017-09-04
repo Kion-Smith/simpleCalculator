@@ -12,6 +12,7 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
+import Controller.mouseHandler;
 import calculator.Calculator;
 
 @SuppressWarnings("serial")
@@ -112,30 +113,30 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 	
 	public void mouseClicked(MouseEvent m) 
 	{
-		
+		mouseHandler.mouseDown();
 	}
 
 	public void mouseEntered(MouseEvent m)
 	{
-		
+		mouseHandler.mouseHover();
 	}
 
 	
 	public void mouseExited(MouseEvent m)
 	{
-		
+		mouseHandler.mouseOff();
 	}
 
 	
 	public void mousePressed(MouseEvent m)
 	{
-
+		
 	}
 
 	
 	public void mouseReleased(MouseEvent m)
 	{
-		
+		mouseHandler.mouseUp();
 	}
 
 	
