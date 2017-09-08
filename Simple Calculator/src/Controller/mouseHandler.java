@@ -6,44 +6,29 @@ public class mouseHandler
 	public static boolean UP =false;
 	public static boolean DOWN= false;
 	public static boolean HOVER= false;
-	public static boolean OFF=false;
+	public static boolean OFF=false;// need array mouseState object to hold each state 
 	
-	public static boolean mouseDown()
+	public static void mouseDown()
 	{
 		DOWN = true;
 		UP = false;
-		HOVER = false;
-		OFF = false;
 		
-		return DOWN;
 	}
-	public static boolean mouseUp()
+	public static void mouseUp()
 	{	
 		UP = true;
 		DOWN = false;
-		HOVER = false;
-		OFF = false;
-		return UP;
+		
 	}
-	public static boolean mouseHover()
+	public static void mouseHover()
 	{
 		HOVER = true;
-		DOWN = false;
-		UP = false;
 		OFF = false;
-		return HOVER;
 	}
-	public static boolean mouseOff()
+	public static void mouseOff()
 	{
 		OFF = true;
-		DOWN = false;
-		UP = false;
 		HOVER = false;
-		
-		return OFF;
-	}
-	public static void update()
-	{
 		
 	}
 }

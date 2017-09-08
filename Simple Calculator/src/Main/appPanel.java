@@ -113,7 +113,7 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 	
 	public void mouseClicked(MouseEvent m) 
 	{
-		mouseHandler.mouseDown();
+		
 	}
 
 	public void mouseEntered(MouseEvent m)
@@ -130,7 +130,7 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 	
 	public void mousePressed(MouseEvent m)
 	{
-		
+		mouseHandler.mouseDown();
 	}
 
 	

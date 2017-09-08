@@ -9,6 +9,8 @@ import Controller.mouseHandler;
 public class Calculator 
 {
 	private int tick=0;
+	public boolean isOff;
+	public boolean isON;
 	public Calculator ()
 	{
 		
@@ -133,10 +135,10 @@ public class Calculator
 		
 		
 		g.setColor(Color.BLACK);
+		//Animations/changes over time
 		if(tick <= 40)
 		{
 			g.fillRect(375, 10, 1, 130);// gonna need to chnage this to depend on location
-			//System.out.println(tick);
 		}
 		else if(tick>40)
 		{
@@ -146,13 +148,24 @@ public class Calculator
 				tick =0;
 			}
 		}
+		if(mouseHandler.HOVER == false && mouseHandler.OFF == false)
+		{
+			isON = true;
+		}
+		if(mouseHandler.HOVER && !mouseHandler.OFF )
+		{
+			g.setColor(Color.MAGENTA);
+			g.drawString("The mouse is on screen", 40, 70);
+		}
+		if(mouseHandler.DOWN )
+		{
+			g.setColor(Color.GREEN);
+			g.drawString("& The mouse is pressed", 0,90);
+		}
+	
 		
-		
-		//g.fillRect(0, 0, 800, 600);
 		
 	}	
-
-	
 	public void handleInput() 
 	{
 		
