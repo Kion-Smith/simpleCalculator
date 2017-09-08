@@ -161,6 +161,8 @@ public class Calculator
 		{
 			g.setColor(Color.GREEN);
 			g.drawString("& The mouse is pressed", 0,90);
+			g.setColor(Color.CYAN);
+			g.drawString(mouseHandler.mouseX+","+mouseHandler.mouseY, 20,110);
 		}
 	
 		

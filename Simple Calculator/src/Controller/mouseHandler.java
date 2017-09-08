@@ -8,6 +8,9 @@ public class mouseHandler
 	public static boolean HOVER= false;
 	public static boolean OFF=false;// need array mouseState object to hold each state 
 	
+	public static int mouseX;
+	public static int mouseY;
+	
 	public static void mouseDown()
 	{
 		DOWN = true;
@@ -29,6 +32,13 @@ public class mouseHandler
 	{
 		OFF = true;
 		HOVER = false;
-		
+	}
+	public static void setX(int x)
+	{
+		mouseX = x;
+	}
+	public static void setY(int y)
+	{
+		mouseY =y;
 	}
 }

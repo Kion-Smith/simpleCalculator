@@ -131,6 +131,8 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 	public void mousePressed(MouseEvent m)
 	{
 		mouseHandler.mouseDown();
+		mouseHandler.setX(m.getX() );
+		mouseHandler.setY(m.getY() );
 	}
 
 	
