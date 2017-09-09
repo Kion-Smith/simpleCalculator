@@ -8,6 +8,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
@@ -16,7 +17,7 @@ import Controller.mouseHandler;
 import calculator.Calculator;
 
 @SuppressWarnings("serial")
-public class appPanel extends JPanel implements Runnable,KeyListener,MouseListener
+public class appPanel extends JPanel implements Runnable,KeyListener,MouseListener,MouseMotionListener
 {
 	private final int WIDTH = 400;
 	private final int HEIGHT = 600;
@@ -45,6 +46,7 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 		if(thread == null)
 		{
 			addKeyListener(this);
+			addMouseMotionListener(this);
 			addMouseListener(this);
 			thread = new Thread(this);
 			thread.start();
@@ -110,7 +112,16 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 		
 		
 	}
+	public void mouseMoved(MouseEvent m) 
+	{
+		mouseHandler.setX(m.getX() );
+		mouseHandler.setY(m.getY() );
+	}
+	public void mouseDragged(MouseEvent m) 
+	{
 	
+	}
+
 	public void mouseClicked(MouseEvent m) 
 	{
 		
@@ -131,10 +142,13 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 	public void mousePressed(MouseEvent m)
 	{
 		mouseHandler.mouseDown();
+		
+	}
+	public void mouseHover(MouseEvent m)
+	{
 		mouseHandler.setX(m.getX() );
 		mouseHandler.setY(m.getY() );
 	}
-
 	
 	public void mouseReleased(MouseEvent m)
 	{
@@ -157,5 +171,8 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 	{
 		
 	}
+
+	
+	
 
 }

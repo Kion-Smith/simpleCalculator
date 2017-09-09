@@ -78,14 +78,19 @@ public class Calculator
 		g.drawRect(200, 505, 95, 85);
 		
 		g.setColor(white);
-		//First row for special buttons
+		//First col for special buttons
 		g.drawRect(10, 150, 95, 45);
-		g.drawRect(105, 150, 95, 45);
-		g.drawRect(200, 150, 95, 45);
-		//Second for special 
 		g.drawRect(10, 195, 95, 45);
+		//Second col
+		g.drawRect(105, 150, 95, 45);
 		g.drawRect(105, 195, 95, 45);
+		//Third col
+		g.drawRect(200, 150, 95, 45);
 		g.drawRect(200, 195, 95, 45);
+		
+		
+		
+		
 		
 		//Regular calc bbuttons
 		
@@ -161,9 +166,9 @@ public class Calculator
 		{
 			g.setColor(Color.GREEN);
 			g.drawString("& The mouse is pressed", 0,90);
-			g.setColor(Color.CYAN);
-			g.drawString(mouseHandler.mouseX+","+mouseHandler.mouseY, 20,110);
 		}
+		g.setColor(Color.CYAN);
+		g.drawString(mouseHandler.mouseX+","+mouseHandler.mouseY, 20,110);
 	
 		
 		

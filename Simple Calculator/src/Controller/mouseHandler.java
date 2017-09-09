@@ -1,5 +1,8 @@
 package Controller;
 
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
+
 public class mouseHandler 
 {
 	
@@ -41,4 +44,6 @@ public class mouseHandler
 	{
 		mouseY =y;
 	}
+	
+	
 }
