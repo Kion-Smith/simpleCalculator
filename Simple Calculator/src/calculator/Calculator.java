@@ -62,38 +62,100 @@ public class Calculator
 		g.setColor(lightOrange);
 		//Row 1
 		
-		g.drawRect(10, 250, 95, 85);
-		g.drawRect(10, 335, 95, 85);
-		g.drawRect(10, 420, 95, 85);
-		g.drawRect(10, 505, 95, 85);
+		//hover chnage color of main three buttons
+		if(mouseHandler.mouseX > 10 && mouseHandler.mouseX<105)
+		{
+			if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)
+			{
+				g.setColor(Color.DARK_GRAY);
+				g.fillRect(10, 250, 95, 85);
+			}
+			if(mouseHandler.mouseY > 335 && mouseHandler.mouseY<420)
+			{
+				g.setColor(Color.DARK_GRAY);
+				g.fillRect(10, 335, 95, 85);
+			}
+			if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<505)
+			{
+				g.setColor(Color.DARK_GRAY);
+				g.fillRect(10, 420, 95, 85);
+			}
+		}
+		
+		if(mouseHandler.mouseX > 105 && mouseHandler.mouseX<200)
+		{
+			if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)
+			{
+				g.setColor(Color.DARK_GRAY);
+				g.fillRect(105, 250, 95, 85);
+			}
+			if(mouseHandler.mouseY > 335 && mouseHandler.mouseY<420)
+			{
+				g.setColor(Color.DARK_GRAY);
+				g.fillRect(105, 335, 95, 85);
+			}
+			if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<505)
+			{
+				g.setColor(Color.DARK_GRAY);
+				g.fillRect(105, 420, 95, 85);
+			}
+		}
+		if(mouseHandler.mouseX > 200 && mouseHandler.mouseX<295)
+		{
+			if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)
+			{
+				g.setColor(Color.DARK_GRAY);
+				g.fillRect(200, 250, 95, 85);
+			}
+			if(mouseHandler.mouseY > 335 && mouseHandler.mouseY<420)
+			{
+				g.setColor(Color.DARK_GRAY);
+				g.fillRect(200, 335, 95, 85);
+			}
+			if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<505)
+			{
+				g.setColor(Color.DARK_GRAY);
+				g.fillRect(200, 420, 95, 85);
+			}
+		}
+		
+		
+		
+		g.setColor(lightOrange);
+		
+		
+		g.drawRect(10, 250, 95, 85);// 1
+		g.drawRect(10, 335, 95, 85);// 4
+		g.drawRect(10, 420, 95, 85);// 7
+		g.drawRect(10, 505, 95, 85);// +/1
 		//Row 2
-		g.drawRect(105, 250, 95, 85);
-		g.drawRect(105, 335, 95, 85);
-		g.drawRect(105, 420, 95, 85);
-		g.drawRect(105, 505, 95, 85);
+		g.drawRect(105, 250, 95, 85);// 2
+		g.drawRect(105, 335, 95, 85);// 5
+		g.drawRect(105, 420, 95, 85);// 8
+		g.drawRect(105, 505, 95, 85);// 0
 		//Row 3
-		g.drawRect(200, 250, 95, 85);
-		g.drawRect(200, 335, 95, 85);
-		g.drawRect(200, 420, 95, 85);
-		g.drawRect(200, 505, 95, 85);
+		g.drawRect(200, 250, 95, 85);// 3
+		g.drawRect(200, 335, 95, 85);// 6
+		g.drawRect(200, 420, 95, 85);// 9
+		g.drawRect(200, 505, 95, 85);// .
 		
 		g.setColor(white);
 		//First col for special buttons
-		g.drawRect(10, 150, 95, 45);
-		g.drawRect(10, 195, 95, 45);
+		g.drawRect(10, 150, 95, 45);// use button
+		g.drawRect(10, 195, 95, 45);// sqrt
 		//Second col
-		g.drawRect(105, 150, 95, 45);
-		g.drawRect(105, 195, 95, 45);
+		g.drawRect(105, 150, 95, 45);// save
+		g.drawRect(105, 195, 95, 45);// power
 		//Third col
-		g.drawRect(200, 150, 95, 45);
-		g.drawRect(200, 195, 95, 45);
+		g.drawRect(200, 150, 95, 45);// delete
+		g.drawRect(200, 195, 95, 45);// %
 		
 		
 		
 		
 		
-		//Regular calc bbuttons
 		
+		//rectangle around butons
 		g.drawRect(295, 150, 95, 90);
 		g.drawRect(295, 240, 95, 90);
 		g.drawRect(295, 330, 95, 90);
