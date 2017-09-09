@@ -38,6 +38,7 @@ public class Calculator
 		tick++;
 		Color darkOrange = new Color(229, 122, 34);// Orange
 		Color lightOrange = new Color(255, 156, 76);// Orange
+		Color hoverOrange = new Color(	255, 128, 25);
 		Color darkestOrange = new Color(221, 148, 2);
 		Color Orange = new Color(255, 153, 0);
 		Color white = new Color(255, 229, 209);
@@ -65,57 +66,131 @@ public class Calculator
 		//hover chnage color of main three buttons
 		if(mouseHandler.mouseX > 10 && mouseHandler.mouseX<105)
 		{
-			if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)
+			if(mouseHandler.mouseY > 150 && mouseHandler.mouseY<195)
 			{
-				g.setColor(Color.DARK_GRAY);
+				g.setColor(hoverOrange);
+				g.fillRect(10, 150, 95, 45);
+			}
+			else if(mouseHandler.mouseY > 195 && mouseHandler.mouseY<240)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(10, 195, 95, 45);
+			}
+			else if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)
+			{
+				g.setColor(hoverOrange);
 				g.fillRect(10, 250, 95, 85);
 			}
-			if(mouseHandler.mouseY > 335 && mouseHandler.mouseY<420)
+			else if(mouseHandler.mouseY > 335 && mouseHandler.mouseY<420)
 			{
-				g.setColor(Color.DARK_GRAY);
+				g.setColor(hoverOrange);
 				g.fillRect(10, 335, 95, 85);
 			}
-			if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<505)
+			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<505)
 			{
-				g.setColor(Color.DARK_GRAY);
+				g.setColor(hoverOrange);
 				g.fillRect(10, 420, 95, 85);
+			}
+			else if(mouseHandler.mouseY > 505 && mouseHandler.mouseY<590)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(10, 505, 95, 85);
 			}
 		}
 		
-		if(mouseHandler.mouseX > 105 && mouseHandler.mouseX<200)
+		else if(mouseHandler.mouseX > 105 && mouseHandler.mouseX<200)
 		{
-			if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)
+			if(mouseHandler.mouseY > 150 && mouseHandler.mouseY<195)
 			{
-				g.setColor(Color.DARK_GRAY);
+				g.setColor(hoverOrange);
+				g.fillRect(105, 150, 95, 45);
+			}
+			else if(mouseHandler.mouseY > 195 && mouseHandler.mouseY<240)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(105, 195, 95, 45);
+			}
+			else if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)
+			{
+				g.setColor(hoverOrange);
 				g.fillRect(105, 250, 95, 85);
 			}
-			if(mouseHandler.mouseY > 335 && mouseHandler.mouseY<420)
+			else if(mouseHandler.mouseY > 335 && mouseHandler.mouseY<420)
 			{
-				g.setColor(Color.DARK_GRAY);
+				g.setColor(hoverOrange);
 				g.fillRect(105, 335, 95, 85);
 			}
-			if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<505)
+			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<505)
 			{
-				g.setColor(Color.DARK_GRAY);
+				g.setColor(hoverOrange);
 				g.fillRect(105, 420, 95, 85);
 			}
-		}
-		if(mouseHandler.mouseX > 200 && mouseHandler.mouseX<295)
-		{
-			if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)
+			else if(mouseHandler.mouseY > 505 && mouseHandler.mouseY<590)
 			{
-				g.setColor(Color.DARK_GRAY);
+				g.setColor(hoverOrange);
+				g.fillRect(105, 505, 95, 85);
+			}
+		}
+		else if(mouseHandler.mouseX > 200 && mouseHandler.mouseX<295)
+		{
+			if(mouseHandler.mouseY > 150 && mouseHandler.mouseY<195)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(200, 150, 95, 45);
+			}
+			else if(mouseHandler.mouseY > 195 && mouseHandler.mouseY<240)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(200, 195, 95, 45);
+			}
+			else if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)
+			{
+				g.setColor(hoverOrange);
 				g.fillRect(200, 250, 95, 85);
 			}
-			if(mouseHandler.mouseY > 335 && mouseHandler.mouseY<420)
+			else if(mouseHandler.mouseY > 335 && mouseHandler.mouseY<420)
 			{
-				g.setColor(Color.DARK_GRAY);
+				g.setColor(hoverOrange);
 				g.fillRect(200, 335, 95, 85);
 			}
-			if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<505)
+			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<505)
 			{
-				g.setColor(Color.DARK_GRAY);
+				g.setColor(hoverOrange);
 				g.fillRect(200, 420, 95, 85);
+			}
+			else if(mouseHandler.mouseY > 505 && mouseHandler.mouseY<590)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(200, 505, 95, 85);
+			}
+		
+		}
+		else if(mouseHandler.mouseX > 295 && mouseHandler.mouseX<390)
+		{
+			if(mouseHandler.mouseY > 150 && mouseHandler.mouseY<240)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(295, 150, 95, 90);
+			}
+			else if(mouseHandler.mouseY > 240 && mouseHandler.mouseY<330)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(295, 240, 95, 90);
+			}
+			else if(mouseHandler.mouseY > 330 && mouseHandler.mouseY<420)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(295, 330, 95, 90);
+			}
+			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<510)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(295, 420, 95, 90);
+			}
+			else if(mouseHandler.mouseY > 510 && mouseHandler.mouseY<595)
+			{
+				g.setColor(hoverOrange);
+				g.fillRect(295, 510, 95, 90);
 			}
 		}
 		
