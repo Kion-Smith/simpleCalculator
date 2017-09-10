@@ -39,7 +39,7 @@ public class Calculator
 		Color darkOrange = new Color(229, 122, 34);// Orange
 		Color lightOrange = new Color(255, 156, 76);// Orange
 		Color hoverOrange = new Color(	255, 128, 25);
-		Color darkestOrange = new Color(221, 148, 2);
+		Color clickedOrange = new Color(228, 102, 0);
 		Color Orange = new Color(255, 153, 0);
 		Color white = new Color(255, 229, 209);
 		g.setColor(darkOrange);
@@ -71,26 +71,57 @@ public class Calculator
 			if(mouseHandler.mouseY > 150 && mouseHandler.mouseY<195) // use button
 			{
 				g.fillRect(10, 150, 95, 45);
+				
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(10, 150, 95, 45);
+				}
 			}
 			else if(mouseHandler.mouseY > 195 && mouseHandler.mouseY<240) // sqrt button
 			{
 				g.fillRect(10, 195, 95, 45);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(10, 195, 95, 45);
+				}
 			}
 			else if(mouseHandler.mouseY > 240 && mouseHandler.mouseY<330)// 1 button
 			{
 				g.fillRect(10, 240, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(10, 240, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 330 && mouseHandler.mouseY<420)// 4 button
 			{
 				g.fillRect(10, 330, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(10, 330, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<510) // 7 button
 			{
 				g.fillRect(10, 420, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(10, 420, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 510 && mouseHandler.mouseY<585) // +/- button
 			{
 				g.fillRect(10, 510, 95, 80);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(10, 510, 95, 80);
+				}
 			}
 		}
 		
@@ -101,26 +132,56 @@ public class Calculator
 			if(mouseHandler.mouseY > 150 && mouseHandler.mouseY<195)// save button
 			{
 				g.fillRect(105, 150, 95, 45);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(105, 150, 95, 45);
+				}
 			}
 			else if(mouseHandler.mouseY > 195 && mouseHandler.mouseY<240)// power button
 			{
 				g.fillRect(105, 195, 95, 45);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(105, 195, 95, 45);
+				}
 			}
 			else if(mouseHandler.mouseY > 240 && mouseHandler.mouseY<330)// 2 button
 			{
 				g.fillRect(105, 240, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(105, 240, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 330 && mouseHandler.mouseY<420)// 5 button
 			{
 				g.fillRect(105, 330, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(105, 330, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<510)// 8 button
 			{
 				g.fillRect(105, 420, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(105, 420, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 510 && mouseHandler.mouseY<585) // 0 button
 			{
 				g.fillRect(105, 510, 95, 80);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(105, 510, 95, 80);
+				}
 			}
 		}
 		else if(mouseHandler.mouseX > 200 && mouseHandler.mouseX<295) // third row
@@ -130,26 +191,56 @@ public class Calculator
 			if(mouseHandler.mouseY > 150 && mouseHandler.mouseY<195) // back button
 			{
 				g.fillRect(200, 150, 95, 45);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(200, 150, 95, 45);
+				}
 			}
 			else if(mouseHandler.mouseY > 195 && mouseHandler.mouseY<240)// modluo button
 			{
 				g.fillRect(200, 195, 95, 45);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(200, 195, 95, 45);
+				}
 			}
 			else if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)// 3 button
 			{
 				g.fillRect(200, 240, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(200, 240, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 330 && mouseHandler.mouseY<420)// 6 button
 			{
 				g.fillRect(200, 330, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(200, 330, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<510)// 9 button
 			{
 				g.fillRect(200, 420, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(200, 420, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 510 && mouseHandler.mouseY<580)// . button
 			{
 				g.fillRect(200, 510, 95, 80);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(200, 510, 95, 80);
+				}
 			}
 		
 		}
@@ -159,22 +250,47 @@ public class Calculator
 			if(mouseHandler.mouseY > 150 && mouseHandler.mouseY<240)// + button
 			{
 				g.fillRect(295, 150, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(295, 150, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 240 && mouseHandler.mouseY<330)// - button
 			{
 				g.fillRect(295, 240, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(295, 240, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 330 && mouseHandler.mouseY<420)// * button
 			{
 				g.fillRect(295, 330, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(295, 330, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<510)// / button
 			{
 				g.fillRect(295, 420, 95, 90);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(295, 420, 95, 90);
+				}
 			}
 			else if(mouseHandler.mouseY > 510 && mouseHandler.mouseY<595)// = button
 			{
 				g.fillRect(295, 510, 95, 80);
+				if(mouseHandler.DOWN)
+				{
+					g.setColor(clickedOrange);
+					g.fillRect(295, 510, 95, 80);
+				}
 			}
 		}
 		
@@ -258,7 +374,7 @@ public class Calculator
 		g.drawString("   ^",115,235);
 		g.drawString("%",235,230);//modulo
 		
-		/*
+	
 		g.setColor(Color.BLACK);
 		//Animations/changes over time
 		if(tick <= 40)
@@ -272,22 +388,7 @@ public class Calculator
 			{
 				tick =0;
 			}
-		}
-		*/
-		if(mouseHandler.HOVER == false && mouseHandler.OFF == false)
-		{
-			isON = true;
-		}
-		if(mouseHandler.HOVER && !mouseHandler.OFF )
-		{
-			g.setColor(Color.MAGENTA);
-			g.drawString("The mouse is on screen", 40, 70);
-		}
-		if(mouseHandler.DOWN )
-		{
-			g.setColor(Color.GREEN);
-			g.drawString("& The mouse is pressed", 0,90);
-		}		
+		}	
 		
 	}	
 	public void handleInput() 
