@@ -60,6 +60,7 @@ public class appPanel extends JPanel implements Runnable,KeyListener,MouseListen
 		image = new BufferedImage(WIDTH,HEIGHT,1);
 		g = (Graphics2D) image.getGraphics();
 		calc = new Calculator();
+	
 	}
 	private void update()
 	{

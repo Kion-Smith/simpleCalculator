@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 
+import Controller.calculatorHandler;
 import Controller.mouseHandler;
 
 public class Calculator 
@@ -19,8 +20,7 @@ public class Calculator
 	
 	public void init() 
 	{
-		
-		
+	
 	}
 
 
@@ -28,7 +28,6 @@ public class Calculator
 	{
 		
 		handleInput();
-		
 	}
 
 	
@@ -94,6 +93,9 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(10, 240, 95, 90);
+					
+					calculatorHandler.getInput(1);
+					
 				}
 			}
 			else if(mouseHandler.mouseY > 330 && mouseHandler.mouseY<420)// 4 button
@@ -103,6 +105,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(10, 330, 95, 90);
+					
+					calculatorHandler.getInput(4);
 				}
 			}
 			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<510) // 7 button
@@ -112,6 +116,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(10, 420, 95, 90);
+					
+					calculatorHandler.getInput(7);
 				}
 			}
 			else if(mouseHandler.mouseY > 510 && mouseHandler.mouseY<585) // +/- button
@@ -154,6 +160,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(105, 240, 95, 90);
+					
+					calculatorHandler.getInput(2);
 				}
 			}
 			else if(mouseHandler.mouseY > 330 && mouseHandler.mouseY<420)// 5 button
@@ -163,6 +171,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(105, 330, 95, 90);
+					
+					calculatorHandler.getInput(5);
 				}
 			}
 			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<510)// 8 button
@@ -172,6 +182,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(105, 420, 95, 90);
+					
+					calculatorHandler.getInput(8);
 				}
 			}
 			else if(mouseHandler.mouseY > 510 && mouseHandler.mouseY<585) // 0 button
@@ -181,6 +193,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(105, 510, 95, 80);
+					
+					calculatorHandler.getInput(0);
 				}
 			}
 		}
@@ -204,6 +218,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(200, 195, 95, 45);
+					
+					calculatorHandler.getInput("%");
 				}
 			}
 			else if(mouseHandler.mouseY > 250 && mouseHandler.mouseY<335)// 3 button
@@ -213,6 +229,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(200, 240, 95, 90);
+					
+					calculatorHandler.getInput(3);
 				}
 			}
 			else if(mouseHandler.mouseY > 330 && mouseHandler.mouseY<420)// 6 button
@@ -222,6 +240,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(200, 330, 95, 90);
+					
+					calculatorHandler.getInput(6);
 				}
 			}
 			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<510)// 9 button
@@ -231,6 +251,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(200, 420, 95, 90);
+					
+					calculatorHandler.getInput(9);
 				}
 			}
 			else if(mouseHandler.mouseY > 510 && mouseHandler.mouseY<580)// . button
@@ -240,6 +262,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(200, 510, 95, 80);
+					
+					calculatorHandler.getInput(".");
 				}
 			}
 		
@@ -254,6 +278,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(295, 150, 95, 90);
+					
+					calculatorHandler.getInput("+");
 				}
 			}
 			else if(mouseHandler.mouseY > 240 && mouseHandler.mouseY<330)// - button
@@ -263,6 +289,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(295, 240, 95, 90);
+					
+					calculatorHandler.getInput("-");
 				}
 			}
 			else if(mouseHandler.mouseY > 330 && mouseHandler.mouseY<420)// * button
@@ -272,6 +300,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(295, 330, 95, 90);
+					
+					calculatorHandler.getInput("*");
 				}
 			}
 			else if(mouseHandler.mouseY > 420 && mouseHandler.mouseY<510)// / button
@@ -281,6 +311,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(295, 420, 95, 90);
+					
+					calculatorHandler.getInput("/");
 				}
 			}
 			else if(mouseHandler.mouseY > 510 && mouseHandler.mouseY<595)// = button
@@ -290,6 +322,8 @@ public class Calculator
 				{
 					g.setColor(clickedOrange);
 					g.fillRect(295, 510, 95, 80);
+					
+					calculatorHandler.getInput("=");
 				}
 			}
 		}
@@ -375,20 +409,7 @@ public class Calculator
 		g.drawString("%",235,230);//modulo
 		
 	
-		g.setColor(Color.BLACK);
-		//Animations/changes over time
-		if(tick <= 40)
-		{
-			g.fillRect(375, 10, 1, 130);// gonna need to chnage this to depend on location
-		}
-		else if(tick>40)
-		{
-			
-			if(tick == 50)
-			{
-				tick =0;
-			}
-		}	
+	
 		
 	}	
 	public void handleInput() 
