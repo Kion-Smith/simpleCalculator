@@ -27,6 +27,7 @@ public class calculatorHandler
 			if(postFixStack.equals("+"))
 			{
 				// do calculations
+				
 				postFixStack.pop();
 			}
 			else if(postFixStack.equals("-"))
@@ -49,8 +50,25 @@ public class calculatorHandler
 			}
 		}
 	}
-	public static String printValue(String input)
+	public static String printValue()
 	{
-		return "";
+		if(calculation == null)
+		{
+			return "";
+		}
+		return calculation;
+	}
+	public static boolean checkToClear()
+	{
+		if(calculation == null)
+		{
+			
+		}
+		else if(calculation.contains("="))
+		{
+			calculation ="";
+			return true;
+		}
+		return false;
 	}
 }

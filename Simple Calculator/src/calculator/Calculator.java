@@ -322,8 +322,14 @@ public class Calculator
 				}
 			}
 		}
+		g.setColor(Color.magenta);
+		g.drawString(calculatorHandler.printValue(), 0, 100);
 		
-		
+		if(calculatorHandler.checkToClear() )
+		{
+			g.setColor(Color.WHITE);
+			g.fillRect(20, 10, 360, 130);
+		}
 		
 		g.setColor(lightOrange);
 		//g.setColor(white);
