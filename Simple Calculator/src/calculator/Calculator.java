@@ -12,11 +12,6 @@ public class Calculator
 	private int tick=0;
 	public boolean isOff;
 	public boolean isON;
-	public Calculator ()
-	{
-		
-	}
-
 	
 	public void init() 
 	{

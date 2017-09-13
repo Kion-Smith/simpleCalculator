@@ -1,8 +1,11 @@
 package Controller;
 
+import java.util.Stack;
+
 public class calculatorHandler 
 {
 	public static String calculation;
+	 static Stack<String> postFixStack;
 	
 	public static void getInput(int input)
 	{
@@ -14,11 +17,40 @@ public class calculatorHandler
 	}
 	public static void postFix()
 	{
-		
+		postFixStack = new Stack<String>();
+		for(int i=0;i<calculation.length();i++)
+		{
+			postFixStack.push(calculation.charAt(i) +"");
+		}
+		while(!calculation.isEmpty() )
+		{
+			if(postFixStack.equals("+"))
+			{
+				// do calculations
+				postFixStack.pop();
+			}
+			else if(postFixStack.equals("-"))
+			{
+				// do calculations
+			}
+			else if(postFixStack.equals("*"))
+			{
+				// do calculations
+				postFixStack.pop();
+			}
+			else if( postFixStack.equals("/"))
+			{
+				// do calculations
+			}
+			else if(postFixStack.equals("^"))
+			{
+				// do calculations
+				postFixStack.pop();
+			}
+		}
 	}
-	public static int solve()
+	public static String printValue(String input)
 	{
-		return 1;
+		return "";
 	}
-	
 }
