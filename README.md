@@ -1,1 +1,1 @@
-Changed to fit project spesifications
+Changed to fit project specifications
