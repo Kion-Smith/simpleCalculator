@@ -71,31 +71,39 @@ public class Calculator extends JFrame implements ActionListener
 	public void actionPerformed(ActionEvent e) 
 	{
 		//getting the numbers from the text field
+		try
+		{
 			double num1 = Double.parseDouble(num1Field.getText());
 			double num2 = Double.parseDouble(num2Field.getText());		
 			
-		if(e.getSource() == addButton)// if the button pressed is equal to add then add
-		{
-			resField.setText((num1 + num2)+"");
-		}
-		else if(e.getSource() == subButton)// if the button pressed is equal to sub then sub
-		{
-			resField.setText((num1-num2)+"");
-		}
-		else if(e.getSource() == multButton)// if the button pressed is equal to mult then mult
-		{
-			resField.setText((num1*num2)+"");
-		}
-		else if(e.getSource() == divButton)// if the button pressed is equal to div then div
-		{
-			if(num2 != 0)// make sure num2 is not zero so no divide by zero error
+			if(e.getSource() == addButton)// if the button pressed is equal to add then add
 			{
-				resField.setText((num1/num2)+"");
+				resField.setText((num1 + num2)+"");
 			}
-			else
+			else if(e.getSource() == subButton)// if the button pressed is equal to sub then sub
 			{
-				resField.setText("Cannot divide by 0");
+				resField.setText((num1-num2)+"");
 			}
+			else if(e.getSource() == multButton)// if the button pressed is equal to mult then mult
+			{
+				resField.setText((num1*num2)+"");
+			}
+			else if(e.getSource() == divButton)// if the button pressed is equal to div then div
+			{
+				if(num2 != 0)// make sure num2 is not zero so no divide by zero error
+				{
+					resField.setText((num1/num2)+"");
+				}
+				else
+				{
+					resField.setText("Cannot divide by 0");
+				}
+			}
+		}
+		catch(Exception E)
+		{
+			E.printStackTrace();
+			resField.setText("You ented and invalid input");
 		}
 	}
 
